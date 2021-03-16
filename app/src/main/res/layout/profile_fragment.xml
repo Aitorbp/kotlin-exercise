@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="@dimen/buttonLSizeWidth"
+            android:layout_height="@dimen/buttonLSizeHeigh"
+            android:layout_margin="@dimen/marginL"
+            android:gravity="center"
+            android:hint="@string/name"/>
+
+        <EditText
+            android:id="@+id/usermane"
+            android:layout_width="@dimen/buttonLSizeWidth"
+            android:layout_height="@dimen/buttonLSizeHeigh"
+            android:layout_margin="@dimen/marginL"
+            android:hint="@string/username"/>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="@dimen/buttonLSizeWidth"
+            android:layout_height="@dimen/buttonLSizeHeigh"
+            android:layout_margin="@dimen/marginL"
+            android:hint="@string/save"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/marginL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_margin="@dimen/marginL"
+            android:layout_width="@dimen/buttonLSizeWidth"
+            android:layout_height="@dimen/buttonLSizeHeigh"
+            android:id="@+id/name_saved"/>
+        <TextView
+            android:layout_margin="@dimen/marginL"
+            android:layout_width="@dimen/buttonLSizeWidth"
+            android:layout_height="@dimen/buttonLSizeHeigh"
+            android:id="@+id/username_saved"/>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/root_container">
+
+    <fragment
+        android:id="@+id/root_container"
+        android:name="com.atsistemas.myapplication.menu_activity.MenuFragment"
+        android:label="MenuActivity"
+        tools:layout="@layout/activity_menu">
+
+        <action
+            android:id="@+id/action_root_container_to_profileFragment2"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_root_container_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.atsistemas.myapplication.home_activity.home.ui.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.atsistemas.myapplication.home_activity.detail.ui.DetailFragment"
+        android:label="DetailFragment" >
+        <action
+            android:id="@+id/action_detailFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.atsistemas.myapplication.profile_fragment.ui.ProfileFragment"
+        android:label="ProfileFragment" >
+
+    </fragment>
+
+
+</navigation>
+
+
